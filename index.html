@@ -2,13 +2,9 @@
 <html lang="en">
 
   <head>
-<script>
-	function pegarDataAtual(){
-   data = new Date();
-   document.getElementById('data').value = data.getFullYear();
-}
-	
-	</script>
+
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -32,7 +28,15 @@
   </head>
 
   <body id="page-top">
-
+	  
+	  
+<script>
+var d = new Date();
+var r = d.getFullYear();
+document.getElementById("demo").innerHTML = r;
+</script>
+	  
+	  
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -193,7 +197,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; sategur <input id='data' type='text'></span>
+            <span class="copyright">Copyright &copy; sategur <p id="demo"></p> </span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
